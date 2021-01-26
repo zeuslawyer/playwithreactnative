@@ -17,6 +17,11 @@ export const HomeScreen: React.FC = (props: any) => {
         onPress={() => navigate("Components")}>
         <Text>Touchable Opacity....</Text>
       </TouchableOpacity>
+      <Button
+        title="IMAGES!"
+        onPress={() => navigate("Images")}
+        color="green"
+      />
     </View>
   )
 
@@ -30,6 +35,7 @@ const styles = StyleSheet.create({
   },
   touchableOpacity: {
     marginTop: 20,
+    marginBottom: 20,
     backgroundColor: "purple",
     padding: 15,
   }
